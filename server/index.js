@@ -3,6 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
 
+const cors = require('cors');
+
+app.use(express.json());
+app.use(cors());
+
+app.use(express.json());
+
 mongoose.connect("mongodb+srv://AdminG12:g12atmongodb@cluster0.s3urbau.mongodb.net/ECA?retryWrites=true&w=majority");
 
 app.get("/getUsers", (req, res) => {
