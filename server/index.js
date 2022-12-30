@@ -12,6 +12,7 @@ app.use(express.json());
 
 mongoose.connect("mongodb+srv://AdminG12:g12atmongodb@cluster0.s3urbau.mongodb.net/ECA?retryWrites=true&w=majority");
 
+
 app.get("/getUsers", (req, res) => {
     UserModel.find({}, (err, result) => {
         if (err) {
