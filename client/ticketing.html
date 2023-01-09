@@ -4,18 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         
         <title>ECA Portal</title>
     </head>
     <body>
+            <nav class="navbar_black">
+                <a class="logo" href="homepage.html"><img src="nlogo.png" alt="Logo"></a>
+                <a class="button" href="#">Home</a>
+                <a class="button" href="#">Your Clubs</a>
+                <a class="button" href="#">Upcoming Events</a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+            </nav>
 
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Your Clubs</a>
-        <a href="#">Upcoming Events</a>
-    </div>
-
-        <h1>Book your ticket</h1>
+        <h1 class="mainHead">BOOK YOUR TICKET</h1>
     <form>
         <label for="event">GET YOUR TICKET NOW!</label><br>
         <select id="event" name="event">
@@ -34,7 +36,7 @@
         <label for="quantity">Quantity:</label><br>
         <input type="number" id="quantity" name="quantity" min="1"><br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Purchase">
     </form> 
     </body>
     
