@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>ECA Portal</title>
+    </head>
+    <body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Your Clubs</a>
+        <a href="#">Upcoming Events</a>
+    </div>
+
+        <h1>Book your ticket</h1>
+    <form>
+        <label for="event">GET YOUR TICKET NOW!</label><br>
+        <select id="event" name="event">
+            <option value="" disabled selected>Select Event</option>
+            <option value="event1">Event 1</option>
+            <option value="event2">Event 2</option>
+            <option value="event3">Event 3</option>
+        </select><br>
+    <br>
+    <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <br>
+        <label for="studentID">Student ID</label><br>
+        <input type="text" id="studentID" name="studentID" required><br>
+        <br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form> 
+    </body>
+    
+</html>

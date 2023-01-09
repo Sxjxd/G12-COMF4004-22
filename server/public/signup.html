@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Portal Sign Up</title>
+    </head>
+<body> 
+ <!-- Sign up form -->
+    <form id="signup-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="role">Role:</label><br>
+        <select id="role" name="role">
+        <option value="admin">Admin</option>
+        <option value="student" selected>Student</option>
+        </select><br><br>
+        <input type="submit" value="Sign up">
+    </form>
+</body>
+
+<script src="/G12-COMF4004-22/server/public/signup.js"></script>
+
+</html>
